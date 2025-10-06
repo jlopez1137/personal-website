@@ -22,12 +22,12 @@ This is a static website built for a university assignment that demonstrates pro
 1. Push the repository to GitHub
 2. Go to repository Settings > Pages
 3. Select "Deploy from a branch" and choose `main`
-4. Your site will be available at `https://jlopez1137.github.io/personal-site`
+4. Your site will be available at `https://jlopez1137.github.io/personal-website`
 
 ## Project Structure
 
 ```
-personal-site/
+personal-website/
 ├── index.html              # Homepage
 ├── about.html              # About page
 ├── resume.html             # Resume page
