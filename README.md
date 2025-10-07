@@ -124,6 +124,63 @@ personal-website/
 
 This project is created for educational purposes. Feel free to use as a template for your own personal website.
 
+## Development Notes & AI Iteration Journey
+
+This project underwent extensive iterative development through AI-assisted prompting, evolving from a template-based structure to a personalized, professional portfolio. The following captures the holistic journey of prompts and refinements:
+
+### Initial Transformation Phase
+**Goal**: Move from template-y appearance to intentional, personalized design
+- **Major Redesign**: Complete personality and content pass to make site feel intentional
+- **Home Page Overhaul**: Removed headshot from homepage, strengthened hero copy with personal mission statement
+- **Skills Integration**: Added "What I'm good at" strip with specific technologies (Python · SQL · Flask · HTML/CSS · ERD & DB Design · Analytics)
+- **CTA Refinement**: Updated primary CTA to "View my work on GitHub" with secondary pointing to contact
+
+### Projects Page Revolution
+**Goal**: Transform from image-heavy showcase to GitHub-centric repository view
+- **Complete Refactor**: Removed all project images and screenshots
+- **Repository Focus**: Created clean, scannable list of highlighted repos with value statements
+- **Content Strategy**: Each project shows repo name, problem→outcome statement, tech stack, and focus area
+- **Project Curation**: Initially included 4 projects, later refined to 2 key repositories (Corporate Programs Web App, Personal Website)
+- **ICS Project Removal**: Eliminated International Competitive Strategy project entirely
+
+### Header Design Evolution
+**Goal**: Modernize header while maintaining consistency across themes
+- **Name Removal**: Removed "Joaquin Lopez" from header across all pages for cleaner design
+- **Structure Preservation**: Maintained original header structure to avoid breaking consistency
+- **Theme Integration**: Fixed hardcoded dark backgrounds to use CSS variables for proper light/dark mode support
+- **Navigation Centering**: Centered navigation after removing site title
+
+### Styling & Consistency Fixes
+**Goal**: Ensure uniform appearance across all pages and themes
+- **Button Styling**: Unified primary and secondary buttons to use same blue gradient and font colors
+- **Skills Centering**: Fixed skills chips to be properly centered on homepage
+- **Theme Consistency**: Resolved light/dark mode inconsistencies, especially in headers
+- **Spacing Improvements**: Added proper spacing to resume page summary section
+
+### Technical Refinements
+**Goal**: Maintain accessibility and responsive design while improving UX
+- **Link Updates**: Corrected GitHub repository links to point to actual repositories
+- **Accessibility Preservation**: Maintained all WCAG 2.1 AA compliance throughout changes
+- **Responsive Design**: Ensured all modifications worked across mobile and desktop
+- **Performance**: Kept minimal JavaScript and efficient CSS structure
+
+### Key Learning Points from AI Iteration
+1. **Incremental Changes**: Each major change required multiple iterations to get right
+2. **Consistency Challenges**: Maintaining theme consistency across light/dark modes required careful CSS variable management
+3. **Content Strategy**: Moving from generic template content to specific, value-driven descriptions
+4. **Design Principles**: Balancing modern aesthetics with accessibility and usability
+5. **Repository Management**: Properly linking to actual GitHub repositories vs placeholder links
+
+### Final State
+The site now represents a professional, intentional portfolio that:
+- Showcases actual GitHub work rather than placeholder content
+- Maintains consistent styling across all pages and themes
+- Provides clear value propositions for each project
+- Uses confident, specific microcopy throughout
+- Preserves all accessibility and responsive design features
+
+This iterative development process demonstrates the value of AI-assisted refinement in creating polished, professional web experiences.
+
 ## Contact
 
 For questions about this project or to report issues, please contact:
