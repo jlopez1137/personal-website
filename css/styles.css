@@ -468,12 +468,6 @@ main {
   border-color: var(--color-border);
 }
 
-/* Dark theme secondary button */
-.dark-theme .btn-secondary {
-  background-color: var(--color-light);
-  color: var(--color-primary);
-  border-color: var(--color-primary);
-}
 
 .card h3 {
   margin-top: 0;
