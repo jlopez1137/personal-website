@@ -317,9 +317,9 @@ function initDarkModeToggle() {
         btn.textContent = isDark ? 'Light Mode' : 'Dark Mode';
         localStorage.setItem('prefersDark', isDark ? '1' : '0');
     };
-    // Initialize from storage or system preference
+    // Initialize from storage or default to dark theme
     const stored = localStorage.getItem('prefersDark');
-    const prefersDark = stored === '1' || (stored === null && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    const prefersDark = stored === '1' || (stored === null); // Default to dark theme
     apply(prefersDark);
     btn.addEventListener('click', () => apply(!document.documentElement.classList.contains('dark-theme')));
 }
