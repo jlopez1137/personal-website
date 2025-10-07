@@ -7,6 +7,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all functionality (apply theme first)
     initDarkModeToggle();
+    initCdnImages();
     initNavigation();
     initFooter();
     initScrollProgressBar();
@@ -46,6 +47,40 @@ function initNavigation() {
                 target.scrollIntoView({ behavior: 'smooth' });
             }
         });
+    }
+}
+
+/**
+ * CDN Image Swap
+ * Replaces images that declare data-cdn-key with a configured CDN URL
+ */
+function initCdnImages() {
+    try {
+        const map = (window && window.CDN_IMAGES) ? window.CDN_IMAGES : {};
+        if (!map || typeof map !== 'object') return;
+
+        const imgs = document.querySelectorAll('img[data-cdn-key]');
+        imgs.forEach(img => {
+            const key = img.getAttribute('data-cdn-key');
+            const url = map[key];
+            if (!url) return;
+
+            // Preload to avoid flashing broken image
+            const preloader = new Image();
+            preloader.onload = () => {
+                img.src = url;
+                // Optionally set srcset for responsive behavior
+                if (!img.hasAttribute('srcset')) {
+                    img.setAttribute('srcset', url);
+                }
+            };
+            preloader.onerror = () => {
+                // Keep existing placeholder if CDN fails
+            };
+            preloader.src = url;
+        });
+    } catch (_) {
+        // Silently ignore; site should continue to function with placeholders
     }
 }
 
