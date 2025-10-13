@@ -196,11 +196,20 @@ button,
   /* Stack images beneath headings on mobile */
   .card > div[style*="display: flex"] {
     flex-direction: column !important;
+    gap: 16px !important;
   }
   
   .card > div[style*="display: flex"] > div {
     min-width: unset !important;
     flex: unset !important;
+  }
+  
+  /* Ensure images are visible and properly sized on mobile */
+  .card img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto 16px auto !important;
   }
   
   /* Skills grid becomes single column */
